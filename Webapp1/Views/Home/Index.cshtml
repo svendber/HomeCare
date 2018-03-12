@@ -1,17 +1,18 @@
-﻿@{
+﻿@using System.Web.Mvc.Html
+@{
     ViewBag.Title = "Home Care";
 }
 <h1> </h1>
 <div class="jumbotron">
     <h1>Home Care</h1>
     <form>
-        First name:<br>
+        E-mail:<br>
         <input type="text" name="E-mail"><br>
-        Last name:<br>
+        Password:<br>
         <input type="text" name="lastname">
-       <br/>
-        <button type ="button" name="Login" onclick="window.location.href='/Home/About'">Login</button>
-
+        <br/>
+       <button type ="button" onclick="window.location.href='/Home/About'">Login</button>
+        @Html.ActionLink(" ", "About")
     </form> 
 
 </div>
