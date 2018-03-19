@@ -1,8 +1,20 @@
 ﻿@{
     ViewBag.Title = "Home Care";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-<button class="button button5">50%</button> 
+<head>
+    <link href="~/CSSsheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+    <div>
+        <button id="but1"
+                OnServerClick="onserverclickhandler"
+                runat="server">
+            buttontext, image, or control
+        </button>
+    </div>
+</body>
 
 

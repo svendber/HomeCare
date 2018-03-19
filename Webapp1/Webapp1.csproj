@@ -150,6 +150,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Entities\Citizen.cs" />
+    <Compile Include="Models\Entities\ContactPerson.cs" />
+    <Compile Include="Models\Entities\Relatives.cs" />
+    <Compile Include="Models\Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +163,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="CSSsheet.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -237,7 +242,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="Views\App_LocalResources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
